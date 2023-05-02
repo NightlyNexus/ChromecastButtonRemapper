@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="divider">#999999</color>
+  <color name="focused_background">#66000088</color>
+  <color name="focused_background_stroke">#660000FF</color>
+  <color name="add_focused_background">#66008800</color>
+  <color name="add_focused_background_stroke">#6600FF00</color>
+  <color name="delete_focused_foreground">#66880000</color>
+  <color name="delete_focused_foreground_stroke">#66FF0000</color>
+  <color name="enable_accessibility_prompt_button_background_focused">#66888888</color>
+  <color name="enable_accessibility_prompt_button_background_focused_stroke">#66FFFFFF</color>
+</resources>

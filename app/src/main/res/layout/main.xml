@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="720dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.nightlynexus.chromecastbuttonremapper.MainActivity"
+    tools:deviceIds="tv">
+
+  <LinearLayout
+      android:id="@+id/enable_accessibility_prompt"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_gravity="center_horizontal"
+      android:gravity="center"
+      android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:gravity="center_horizontal"
+        android:text="@string/enable_accessibility_prompt"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/enable_accessibility_prompt_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/enable_accessibility_prompt_button_background"
+        android:padding="16dp"
+        android:text="@string/enable_accessibility_prompt_button"
+        android:textSize="24sp" />
+  </LinearLayout>
+
+  <TextView
+      android:id="@+id/add"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="32dp"
+      android:layout_marginBottom="32dp"
+      android:background="@drawable/add_background"
+      android:drawableStart="@drawable/add"
+      android:drawablePadding="8dp"
+      android:gravity="center_vertical"
+      android:padding="16dp"
+      android:text="@string/add"
+      android:textSize="20sp" />
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/list"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+</LinearLayout>

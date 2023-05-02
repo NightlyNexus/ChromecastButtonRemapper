@@ -1,0 +1,43 @@
+plugins {
+  id 'com.android.application'
+  id 'org.jetbrains.kotlin.android'
+}
+
+android {
+  namespace 'com.nightlynexus.chromecastbuttonremapper'
+  compileSdk 33
+
+  defaultConfig {
+    applicationId 'com.nightlynexus.chromecastbuttonremapper'
+    minSdk 23
+    targetSdk 33
+    versionCode 1
+    versionName '1.0'
+
+  }
+
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
+
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+
+  lintOptions {
+    abortOnError true
+    warningsAsErrors true
+    lintConfig rootProject.file('lint.xml')
+    textReport true
+    textOutput 'stdout'
+    htmlReport true
+    htmlOutput rootProject.file("lint-reports/${name}.html")
+    // We run a full lint analysis as build part in CI, so skip vital checks for assemble tasks.
+    checkReleaseBuilds false
+  }
+}
+
+dependencies {
+  implementation 'androidx.leanback:leanback:1.0.0'
+}
